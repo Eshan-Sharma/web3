@@ -21,7 +21,9 @@ export const TransactionProvider = ({children})=>{
     const [currentAccount, setCurrentAccount] = useState('');
     // eslint-disable-next-line no-unused-vars
     const [formData, setFormData] = useState({addressTo:'', amount:'',keyword:'', message:''});
+    // eslint-disable-next-line no-unused-vars
     const [isLoading, setIsLoading] = useState(false);
+    // eslint-disable-next-line no-unused-vars
     const [transactionCount, setTransactionCount] = useState(localStorage.getItem('transactionCount'));
 
     const handleChange = (e,name)=>{
